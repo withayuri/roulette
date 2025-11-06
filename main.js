@@ -1,4 +1,4 @@
-'use script'
+'use strict';
 
 {
     const btn = document.getElementById('btn');
@@ -7,6 +7,6 @@
     btn.addEventListener('click', () => {
         const results = ['ハンバーグ', '唐揚げ', 'チキン南蛮', 'オムライス', '焼きそば', 'カレー', '生姜焼き', 'ミートパスタ'];
         const n = Math.floor(Math.random() * results.length);
-        result.textContent = results[n];
+        menu.textContent = results[n];
     });
 }
